@@ -1,29 +1,25 @@
 {
-    "name": "omnipay/dummy",
+    "name": "repox/oquickpay",
     "type": "library",
-    "description": "Dummy driver for the Omnipay payment processing library",
+    "description": "Quickpay driver for the Omnipay payment processing library",
     "keywords": [
-        "dummy",
+        "quickpay",
         "gateway",
         "merchant",
         "omnipay",
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/omnipay/dummy",
+    "homepage": "https://github.com/repox/oquickpay",
     "license": "MIT",
     "authors": [
         {
-            "name": "Adrian Macneil",
-            "email": "adrian@adrianmacneil.com"
-        },
-        {
-            "name": "Omnipay Contributors",
-            "homepage": "https://github.com/omnipay/dummy/contributors"
+            "name": "Dan Storm",
+            "email": "storm@catalystcode.net"
         }
     ],
     "autoload": {
-        "psr-0": { "Omnipay\\Dummy\\" : "src/" }
+        "psr-0": { "Omnipay\\Quickpay\\" : "src/" }
     },
     "require": {
         "omnipay/common": "~2.0"
