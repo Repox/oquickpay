@@ -21,7 +21,7 @@ class Gateway extends AbstractGateway
 {
     public function getName()
     {
-        return 'Dummy';
+        return 'Quickpay';
     }
 
     public function getDefaultParameters()
@@ -91,38 +91,10 @@ class Gateway extends AbstractGateway
         return $this->createRequest('\Omnipay\Quickpay\Message\AuthorizeRequest', $parameters);
     }
 
-    public function capture(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\CaptureRequest', $parameters);
-    }
-
     public function purchase(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\Quickpay\Message\PurchaseRequest', $parameters);
     }
 
-    public function refund(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\RefundRequest', $parameters);
-    }
 
-    public function fetchTransaction(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\FetchTransactionRequest', $parameters);
-    }
-
-    public function createCard(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\CreateCardRequest', $parameters);
-    }
-
-    public function updateCard(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\UpdateCardRequest', $parameters);
-    }
-
-    public function deleteCard(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\Quickpay\Message\DeleteCardRequest', $parameters);
-    }
 }

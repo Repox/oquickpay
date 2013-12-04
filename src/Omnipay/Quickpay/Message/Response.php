@@ -7,7 +7,7 @@ use Omnipay\Common\Message\AbstractResponse;
 /**
  * Dummy Response
  */
-class Response extends AbstractResponse
+class Response extends AbstractResponse 
 {
     public function isSuccessful()
     {

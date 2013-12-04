@@ -5,7 +5,7 @@ namespace Omnipay\Quickpay\Message;
 /**
  * Dummy Authorize Request
  */
-class AuthorizeRequest extends AbstractRequest
+class PurchaseRequest extends AbstractRequest
 {
     public function getData()
     {   
@@ -19,6 +19,7 @@ class AuthorizeRequest extends AbstractRequest
         $data['continueurl'] = $this->getParameter('returnUrl');       
         $data['ordernumber'] = $this->getParameter('transactionId');
         $data['msgtype'] = 'authorize';
+        $data['autocapture'] = 1;
 		
         return $this->form_fields($data);
     }

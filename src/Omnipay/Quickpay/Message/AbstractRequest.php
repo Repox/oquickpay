@@ -86,7 +86,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 	}		
 
 	public function sendData($data)
-	{
+	{			
 		$data = $this->_build_data_fields(array_merge($data, $this->getBaseData()));
 		var_dump($data);
 
